@@ -82,4 +82,5 @@ The embedding values are learned during training.
 ## References
 
 * [How LLMs work for Web Devs: GPT in 600 lines of Vanilla JS - Ishan Anand](https://www.youtube.com/watch?v=ZuiJjkbX0Og)
+* [GPT-2 Architecture Demystified: A Step-by-Step Breakdown](https://sararavi14.medium.com/gpt-2-architecture-demystified-a-step-by-step-breakdown-74b1c5c80d17)
 * [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909) - introduced using byte-pair encoding in machine learning.
