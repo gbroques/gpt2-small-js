@@ -1,6 +1,6 @@
 # gpt2-small-js
 
-JavaScript implementation of [GPT-2](https://en.wikipedia.org/wiki/GPT-2) small (124 million parameters) based on Ishan Anand's [spreadsheets are all you need.ai](https://spreadsheets-are-all-you-need.ai/gpt2/) implementation for educational purposes.
+JavaScript implementation of Generative Pre-trained Transformer 2 ([GPT-2](https://en.wikipedia.org/wiki/GPT-2)) small (124 million parameters) based on Ishan Anand's [spreadsheets are all you need.ai](https://spreadsheets-are-all-you-need.ai/gpt2/) implementation for educational purposes.
 
 ## Why study GPT-2?
 
@@ -10,7 +10,9 @@ The following diagram shows this relationship:
 
 [![LLM family tree](./llm-family-tree.jpg)](https://github.com/Mooler0410/LLMsPracticalGuide)
 
-GPT-2 has similar architecture to the wildly successful ChatGPT model mainly differing in scale (of both parameter count and training dataset), and how they were trained.
+GPT-2 is based on the transformer architecture introduced by [Attention Is All You Need](https://en.wikipedia.org/wiki/Attention_Is_All_You_Need) in 2017, and shares similar architecture to the wildly successful ChatGPT model.
+
+The main differences between GPT-2 and ChatGPT are scale (in terms of both parameter count and training dataset), and how they were trained.
 
 Anand claims understanding GPT-2 allows understanding 80% of state-of-the-art models.
 
