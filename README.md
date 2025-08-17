@@ -75,9 +75,15 @@ Every token receives an embedding.
 
 An embedding is a list of numbers that represent both the meaning and position of the token in the prompt.
 
-In GPT-2, the embedding size is 768.
+In GPT-2 small, the number of tokens is 50,257 and the embedding dimension is 768.
 
 The embedding values are learned during training.
+
+The `model_wte.csv` file are the learned values during training known as the text embedding matrix.
+
+It contributes 50,257 * 768 = 38,597,376 or roughly 39 million parameters to the overall 124 million parameters of the model.
+
+Using English as the vocabulary, with 170,000 words, would nearly double the numbers of parameters of the model.
 
 ## References
 
