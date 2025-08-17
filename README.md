@@ -4,7 +4,9 @@ JavaScript implementation of Generative Pre-trained Transformer 2 ([GPT-2](https
 
 ## Why study GPT-2?
 
-GPT-2 (2019) is the predecessor of state-of-the-art large language models (LLMs) such as ChatGPT (2022), Claude, Llama, and Bard.
+GPT-2 was introduced by [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) in 2019.
+
+It is the predecessor of state-of-the-art large language models (LLMs) such as ChatGPT (2022), Claude, Llama, and Bard.
 
 The following diagram shows this relationship:
 
