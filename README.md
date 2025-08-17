@@ -67,6 +67,8 @@ Subword tokenization lies somewhere in between word-based and character-based to
 
 [Byte-pair encoding (BPE)](https://en.wikipedia.org/wiki/Byte-pair_encoding) is a compression algorithm introduced by Philip Gage in "A New Algorithm for Data Compression (1994)".
 
+**Reference:** [Lesson 2: Byte Pair Encoding in AI Explained with a Spreadsheet](https://www.youtube.com/watch?v=PvZN3-WqAOI)
+
 ## Text & Position Embeddings
 
 Every token receives an embedding.
