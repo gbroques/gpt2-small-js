@@ -100,6 +100,8 @@ It contributes 50,257 * 768 = 38,597,376 or roughly 39 million parameters to the
 
 Using English as the vocabulary, with 170,000 words, would nearly double the numbers of parameters of the model.
 
+**Reference:** [Lesson 3: Understanding Word Embeddings in AI and LLMs](https://www.youtube.com/watch?v=v6yD5SOxOXI)
+
 ## References
 
 * [How LLMs work for Web Devs: GPT in 600 lines of Vanilla JS - Ishan Anand](https://www.youtube.com/watch?v=ZuiJjkbX0Og)
