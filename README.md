@@ -51,7 +51,9 @@ This leads to an increase in the number of model parameters, and hence space and
 
 For example, English has ~170,000 words where GPT-2 has ~50,000 tokens in its vocabulary.
 
-Character-based tokenization also increases the space and time complexity since there are matrices with rows for each token.
+Character-based tokenization also increases the space and time complexity since it increase the number of input tokens.
+
+Each token receives an embedding.
 
 There's also low semantic correlation between characters.
 
@@ -66,6 +68,19 @@ Subword tokenization lies somewhere in between word-based and character-based to
 ### Byte-pair Encoding (BPE)
 
 [Byte-pair encoding (BPE)](https://en.wikipedia.org/wiki/Byte-pair_encoding) is a compression algorithm introduced by Philip Gage in "A New Algorithm for Data Compression (1994)".
+
+[Neural Machine Translation of Rare Words with Subword Units (2015)](https://arxiv.org/abs/1508.07909) adapts BPE for subword tokenization by using characters instead of bytes.
+
+It consists of two phases:
+
+1. **Learning** - Learn common subwords
+    1. Input a large corpus of text
+    2. Apply BPE learning algorithm
+    3. Output a vocabulary, or dictionary of tokens (`vocab_bpe.csv`, `bpe_token_ids.csv`)
+2. **Tokenization** - Split words into tokens
+    1. Input text & vocabulary
+    2. Apply BPE tokenization algorithm
+    3. Output tokens
 
 **Reference:** [Lesson 2: Byte Pair Encoding in AI Explained with a Spreadsheet](https://www.youtube.com/watch?v=PvZN3-WqAOI)
 
@@ -89,4 +104,3 @@ Using English as the vocabulary, with 170,000 words, would nearly double the num
 
 * [How LLMs work for Web Devs: GPT in 600 lines of Vanilla JS - Ishan Anand](https://www.youtube.com/watch?v=ZuiJjkbX0Og)
 * [GPT-2 Architecture Demystified: A Step-by-Step Breakdown](https://sararavi14.medium.com/gpt-2-architecture-demystified-a-step-by-step-breakdown-74b1c5c80d17)
-* [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909) - introduced using byte-pair encoding in machine learning.
