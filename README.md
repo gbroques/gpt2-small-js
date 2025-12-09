@@ -23,7 +23,7 @@ Anand claims understanding GPT-2 allows understanding 80% of state-of-the-art mo
 GPT-2 takes in text as input and outputs the most-likely next token using the following simplified architecture:
 
 1. [Tokenization](#tokenization)
-2. [Text & Position Embeddings](#token--position-embeddings)
+2. [Token & Position Embeddings](#token--position-embeddings)
 3. (loop 12 times)
     1. Multi-head Attention
     2. Multilayer Perceptron
@@ -84,7 +84,9 @@ It consists of two phases:
 
 **Reference:** [Lesson 2: Byte Pair Encoding in AI Explained with a Spreadsheet](https://www.youtube.com/watch?v=PvZN3-WqAOI)
 
-## Text & Position Embeddings
+## Token & Position Embeddings
+
+### Token Embeddings
 
 Every token receives an embedding.
 
