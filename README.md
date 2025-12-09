@@ -100,7 +100,32 @@ It contributes 50,257 * 768 = 38,597,376 or roughly 39 million parameters to the
 
 Using English as the vocabulary, with 170,000 words, would nearly double the numbers of parameters of the model.
 
-**Reference:** [Lesson 3: Understanding Word Embeddings in AI and LLMs](https://www.youtube.com/watch?v=v6yD5SOxOXI)
+**References:**
+* [Lesson 3: Understanding Word Embeddings in AI and LLMs](https://www.youtube.com/watch?v=v6yD5SOxOXI)
+* [33:11 How LLMs work for Web Devs: GPT in 600 lines of Vanilla JS - Ishan Anand](https://youtu.be/ZuiJjkbX0Og?t=1991)
+
+### Position Embeddings
+
+In English, word order matters.
+
+"The dog chases the cat" is different than "the cat chases the dog".
+
+To capture position, we slightly move the token's embedding in embeddings space based on the position of the token in the prompt.
+
+In [Attention Is All You Need](https://papers.nips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) (see section "3.5 Positional Encoding"), the author's used `sin` and `cos` functions to slightly offset the token's embedding based on its position in the prompt.
+
+In GPT-2, learned positional embeddings were instead used (see "Model specifications" in section 4.1 on page 5 of [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)).
+
+The `model_wpe.csv` file contains the learned values during training known as the position embedding matrix.
+
+It has a dimension of 1024 x 768 where 1024 is the model's max context size.
+
+This matrix is simply added to the token embeddings to produce the positioned embeddings.
+
+Modern LLMs don't follow this approach for position embeddings, and instead use [rotary position embedding (RoPE)](https://arxiv.org/abs/2104.09864).
+
+**References:**
+* [49:41 How LLMs work for Web Devs: GPT in 600 lines of Vanilla JS - Ishan Anand](https://youtu.be/ZuiJjkbX0Og?t=2981)
 
 ## References
 
