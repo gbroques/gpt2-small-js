@@ -116,7 +116,13 @@ To capture position, we slightly move the token's embedding in embeddings space 
 
 In [Attention Is All You Need](https://papers.nips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) (see section "3.5 Positional Encoding"), the author's used `sin` and `cos` functions to slightly offset the token's embedding based on its position in the prompt.
 
+The following chart shows where woman is as the first word in the prompt at (2, 1), and its range of possible values at other positions in the prompt denoted by the semi-transparent purple circle surrounding (2, 1):
+![position embedding shifting token embedding](./position-embedding-shifting-token-embedding.png)
+
 In GPT-2, learned positional embeddings were instead used (see "Model specifications" in section 4.1 on page 5 of [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)).
+
+This diagram illustrates how the learned positional embeddings in GPT-2 shift the meaning of "happy" based on its position in the prompt using PCA to visualize the embeddings in two dimensions:
+![meaning of happy at different positions in the prompt](./meaning-of-happy-at-different-positions-in-the-prompt.png)
 
 The `model_wpe.csv` file contains the learned values during training known as the position embedding matrix.
 
