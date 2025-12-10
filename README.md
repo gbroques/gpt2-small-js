@@ -8,7 +8,7 @@ GPT-2 was introduced by [Language Models are Unsupervised Multitask Learners](ht
 
 It is the predecessor of state-of-the-art large language models (LLMs) such as ChatGPT (2022), Claude, Llama, and Bard.
 
-The following diagram shows this relationship:
+The following diagram shows this relationship as a blue-gray "decoder-only" branch:
 
 [![LLM family tree](./llm-family-tree.jpg)](https://github.com/Mooler0410/LLMsPracticalGuide)
 
